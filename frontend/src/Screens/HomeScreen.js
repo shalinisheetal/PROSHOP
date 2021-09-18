@@ -6,10 +6,15 @@ import Product from "../components/Product";
 const HomeScreen = () => {
   const [products, setProducts] = useState([]);
 
+  // useEffect() starts a fetch request by calling fetchProducts() async function
+  // after the initial mounting.
   useEffect(() => {
     const fetchProducts = async () => {
       const { data } = await axios.get("/api/products");
-      // res.data
+      // destructure res.data
+
+      // When the request completes, setProducts(data) updates the products state
+      // with the just fetched product list.
       setProducts(data);
     };
 
