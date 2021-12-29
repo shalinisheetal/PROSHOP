@@ -35,3 +35,5 @@ export const productDetailsReducer = (
       return state;
   }
 };
+
+// reducer = ( state = {initial_state}, action ) => {}

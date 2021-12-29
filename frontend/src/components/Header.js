@@ -7,6 +7,7 @@ const Header = () => {
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
+          {/* LinkContainer serve purpose of Link but from bootstrap */}
           <LinkContainer to="/">
             <Navbar.Brand>PROSHOP</Navbar.Brand>
           </LinkContainer>

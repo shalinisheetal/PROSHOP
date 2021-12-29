@@ -14,6 +14,7 @@ connectDB();
 
 const importData = async () => {
   try {
+    // Wipe out the data already present in database
     await Order.deleteMany();
     await Product.deleteMany();
     await User.deleteMany();
@@ -22,6 +23,7 @@ const importData = async () => {
 
     const adminUser = createdUsers[0]._id;
 
+    // products including the admin user
     const sampleProducts = products.map((product) => {
       return { ...product, user: adminUser };
     });
@@ -50,6 +52,7 @@ const destroyData = async () => {
   }
 };
 
+// check argument passed in console
 if (process.argv[2] === "-d") {
   destroyData();
 } else {

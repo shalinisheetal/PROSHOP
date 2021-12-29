@@ -8,12 +8,14 @@ import {
   PRODUCT_DETAILS_FAIL,
 } from "../constants/productConstants";
 
+// thunk allows function inside function
 export const listProducts = () => async (dispatch) => {
   try {
     dispatch({ type: PRODUCT_LIST_REQUEST });
 
     const { data } = await axios.get("/api/products");
 
+    // if we obtain a successful result else trigger catch
     dispatch({
       type: PRODUCT_LIST_SUCCESS,
       payload: data,

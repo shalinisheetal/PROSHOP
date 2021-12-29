@@ -6,6 +6,7 @@ import Message from "../components/Message";
 import Loader from "../components/Loader";
 import { listProducts } from "../actions/productActions";
 
+// Products are global level
 const HomeScreen = () => {
   const dispatch = useDispatch();
 

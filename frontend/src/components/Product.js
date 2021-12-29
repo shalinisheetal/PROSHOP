@@ -6,6 +6,7 @@ import Rating from "./Rating";
 const Product = ({ product }) => {
   return (
     <Card className="my-3 p-3 rounded">
+      {/* Links used because it is a single page application, so no reloading */}
       <Link to={`/product/${product._id}`}>
         <Card.Img src={product.image} variant="top"></Card.Img>
       </Link>
