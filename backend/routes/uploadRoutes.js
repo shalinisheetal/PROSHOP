@@ -19,15 +19,13 @@ const storage = multer.diskStorage({
 
 function checkFileType(file, cb) {
   // possible image formats
-  const fileTypes = /jpeg|jpg|png/;
+  const filetypes = /jpg|jpeg|png/;
 
   // check if uploaded file if any of permissible image types
-  const extName = fileTypes.test(
-    path.extname(file.originalname).toLocaleLowerCase()
-  );
-  const mimeType = fileTypes.test(file.mimetype);
+  const extname = filetypes.test(path.extname(file.originalname).toLowerCase());
+  const mimetype = filetypes.test(file.mimetype);
 
-  if (extName && mimeType) {
+  if (extname && mimetype) {
     return cb(null, true);
   } else {
     cb("Images only!");
@@ -42,7 +40,7 @@ const upload = multer({
 });
 
 router.post("/", upload.single("image"), (req, res) => {
-  res.send(`\${req.file.path}`);
+  res.send(`/${req.file.path}`);
 });
 
 export default router;
