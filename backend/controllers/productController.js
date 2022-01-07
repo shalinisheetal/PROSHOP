@@ -143,6 +143,16 @@ const createProductReview = asyncHandler(async (req, res) => {
   }
 });
 
+// @desc    Get top rated products
+// @route   POST /api/products/top
+// @access  Public
+const getTopProducts = asyncHandler(async (req, res) => {
+  // obtain top 3 products sorted in ascending order according to size.
+  const products = await Product.find({}).sort({ rating: -1 }).limit(3);
+
+  res.json(products);
+});
+
 export {
   getProducts,
   getProductById,
@@ -150,6 +160,7 @@ export {
   createProduct,
   updateProduct,
   createProductReview,
+  getTopProducts,
 };
 
 // asynHandler is a middleware used
