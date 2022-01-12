@@ -18,11 +18,24 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+      <Navbar
+        className="bg-color font-color"
+        variant="dark"
+        expand="lg"
+        collapseOnSelect
+      >
         <Container>
           {/* LinkContainer serve purpose of Link but from bootstrap */}
           <LinkContainer to="/">
-            <Navbar.Brand>PROSHOP</Navbar.Brand>
+            <Navbar.Brand>
+              <img
+                src="./images/logo.jpg"
+                width="240"
+                height="75"
+                className="d-inline-block align-top"
+                alt="WebBuy logo"
+              />
+            </Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -31,7 +44,9 @@ const Header = () => {
             <Nav className="ms-auto">
               <LinkContainer to="/cart">
                 <Nav.Link>
-                  <i className="fas fa-shopping-cart"> </i> Cart
+                  <strong className="font-color">
+                    <i className="fas fa-shopping-cart"> </i> My Cart
+                  </strong>
                 </Nav.Link>
               </LinkContainer>
               {userInfo ? (

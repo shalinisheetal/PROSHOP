@@ -15,8 +15,16 @@ h1 {
   padding: 1rem 0
 }
 
+.bg-color{
+  background-color: #343333;
+}
+
+.font-color{
+  color: #F55450
+}
+
 .rating span {
-  margin: 01.rem;
+  margin: 0.1rem;
 }
 
 select.form-control {
@@ -62,7 +70,7 @@ select.form-control {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #F55450;
   background-clip: padding-box;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;

@@ -17,13 +17,15 @@ const Rating = ({ value, text, color }) => {
         ></i>
       ))}
 
+      {/* If text exists */}
       <span>{text && text}</span>
     </div>
   );
 };
 
+// color for stars
 Rating.defaultProps = {
-  color: "#f8e825",
+  color: "#FFD700",
 };
 
 Rating.propTypes = {
