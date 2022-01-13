@@ -1,5 +1,5 @@
 {
-  "name": "proshop",
+  "name": "webbuy",
   "version": "1.0.0",
   "description": "MERN E-COMMERCE APP",
   "main": "server.js",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shalinisheetal/PROSHOP.git"
+    "url": "git+https://github.com/shalinisheetal/WEBBUY.git"
   },
   "author": "Shalini",
   "license": "ISC",

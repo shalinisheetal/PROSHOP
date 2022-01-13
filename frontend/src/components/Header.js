@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { LinkContainer } from "react-router-bootstrap";
 import { Route } from "react-router-dom";
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Container, NavDropdown, Image } from "react-bootstrap";
 import SearchBox from "./SearchBox";
 import { logout } from "../actions/userActions";
 
@@ -28,8 +28,8 @@ const Header = () => {
           {/* LinkContainer serve purpose of Link but from bootstrap */}
           <LinkContainer to="/">
             <Navbar.Brand>
-              <img
-                src="./images/logo.jpg"
+              <Image
+                src="/./images/logo.jpg"
                 width="240"
                 height="75"
                 className="d-inline-block align-top"
