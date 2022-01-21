@@ -20,9 +20,9 @@
   "author": "Shalini",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shalinisheetal/PROSHOP/issues"
+    "url": "https://github.com/shalinisheetal/WEBBUY/issues"
   },
-  "homepage": "https://github.com/shalinisheetal/PROSHOP#readme",
+  "homepage": "https://github.com/shalinisheetal/WEBBUY#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",

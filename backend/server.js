@@ -11,8 +11,10 @@ import userRoutes from "./routes/userRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
 
+// environment variables
 dotenv.config();
 
+// connect to database
 connectDB();
 
 const app = express();
@@ -41,8 +43,8 @@ app.get("/api/config/paypal", (req, res) => {
 const __dirname = path.resolve();
 app.use("/uploads", express.static(path.join(__dirname, "/uploads")));
 
+// error middlewares
 app.use(notFound);
-
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;

@@ -163,4 +163,4 @@ export {
   getTopProducts,
 };
 
-// asynHandler is a middleware used
+// asyncHandler is a middleware used for handling exceptions

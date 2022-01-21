@@ -18,6 +18,7 @@ import {
   listProductDetails,
   createProductReview,
 } from "../actions/productActions";
+import { addToCart } from "../actions/cartActions";
 import { PRODUCT_CREATE_REVIEW_RESET } from "../constants/productConstants";
 
 const ProductScreen = ({ history, match }) => {
@@ -45,8 +46,10 @@ const ProductScreen = ({ history, match }) => {
     dispatch(listProductDetails(match.params.id));
   }, [dispatch, successReview, match]);
 
+  // on clicking add to cart
   const addToCartHandler = () => {
-    history.push(`/cart/${match.params.id}?qty=${qty}`);
+    dispatch(addToCart(product._id, qty));
+    history.push("/cart");
   };
 
   const submitHandler = (e) => {

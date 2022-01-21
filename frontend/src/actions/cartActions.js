@@ -20,6 +20,9 @@ export const addToCart = (id, qty) => async (dispatch, getState) => {
       qty,
     },
   });
+
+  // can only store strings in local storage
+  // parsed later
   localStorage.setItem("cartItems", JSON.stringify(getState().cart.cartItems));
 };
 

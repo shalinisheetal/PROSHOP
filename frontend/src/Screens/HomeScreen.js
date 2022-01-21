@@ -24,8 +24,6 @@ const HomeScreen = ({ match }) => {
     dispatch(listProducts(keyword, pageNumber));
   }, [keyword, pageNumber, dispatch]);
 
-  //const products = []
-
   return (
     <>
       <Meta />

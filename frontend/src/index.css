@@ -23,6 +23,16 @@ h1 {
   color: #F55450
 }
 
+.navbar{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* .navbar>.container{
+  margin-left: 0;
+  margin-right: 0;
+} */
+
 .rating span {
   margin: 0.1rem;
 }

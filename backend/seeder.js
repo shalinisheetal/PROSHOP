@@ -23,14 +23,14 @@ const importData = async () => {
 
     const adminUser = createdUsers[0]._id;
 
-    // products including the admin user
+    // make admin the user of all products
     const sampleProducts = products.map((product) => {
       return { ...product, user: adminUser };
     });
 
     await Product.insertMany(sampleProducts);
 
-    console.log("Data Imported!".green.inverse);
+    console.log("Data Imported Successfullly!".green.inverse);
     process.exit();
   } catch (error) {
     console.error(`${error}`.red.inverse);
@@ -58,3 +58,5 @@ if (process.argv[2] === "-d") {
 } else {
   importData();
 }
+
+// scripts to execute this file added in package.json

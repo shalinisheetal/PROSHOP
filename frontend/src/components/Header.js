@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header>
       <Navbar
-        className="bg-color font-color"
+        className="bg-color font-color px-0"
         variant="dark"
         expand="lg"
         collapseOnSelect
@@ -65,6 +65,7 @@ const Header = () => {
                   </Nav.Link>
                 </LinkContainer>
               )}
+
               {userInfo && userInfo.isAdmin && (
                 <NavDropdown title={"Admin"} id="adminmenu">
                   <LinkContainer to="/admin/userlist">
