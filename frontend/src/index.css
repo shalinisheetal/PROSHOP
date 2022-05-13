@@ -2,17 +2,32 @@ main {
   min-height: 80vh;
 }
 
+p, h1, h2, h3, h4, h5, h6, a{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
 h3 {
   padding: 1rem 0;
+  font-weight: 700;
 }
 h2 {
   font-size: 1.4rem;
-  padding: 0.5rem 0
+  padding: 0.5rem 0;
+  font-weight: 700;
+
 }
 
 h1 {
   font-size: 1.8rem;
-  padding: 1rem 0
+  padding: 1.5rem 0;
+  font-weight: 700;
+  margin-top: 2%;
+}
+
+.font-stylish{
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 2rem;
 }
 
 .bg-color{
@@ -23,15 +38,24 @@ h1 {
   color: #F55450
 }
 
-.navbar{
+.links{
+  text-decoration: none;
+}
+
+/* .navbar{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
+} */
 
 /* .navbar>.container{
   margin-left: 0;
   margin-right: 0;
 } */
+
+.card:hover{ 
+  box-shadow: 1px 8px 20px grey;
+ -webkit-transition:  box-shadow .2s ease-in;
+}
 
 .rating span {
   margin: 0.1rem;

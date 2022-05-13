@@ -19,7 +19,7 @@ const Header = () => {
   return (
     <header>
       <Navbar
-        className="bg-color font-color px-0"
+        className="bg-color font-color px-0 py-0"
         variant="dark"
         expand="lg"
         collapseOnSelect
@@ -34,6 +34,7 @@ const Header = () => {
                 height="75"
                 className="d-inline-block align-top"
                 alt="WebBuy logo"
+                style={{ marginRight: "5px" }}
               />
             </Navbar.Brand>
           </LinkContainer>

@@ -12,6 +12,7 @@ const Loader = () => {
         margin: "auto",
         display: "block",
       }}
+      variant="primary"
     >
       <span className="sr-only">Loading...</span>
     </Spinner>

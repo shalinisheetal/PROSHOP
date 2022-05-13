@@ -1,21 +1,15 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "../form.css";
+//import styles from "./form.scss";
 
 const FormContainer = ({ children }) => {
   return (
-    <Container className="form-container">
-      <div className="screen">
-        <div className="screen__content">
-          <div>
-            <Row className="justify-content-md-center">
-              <Col xs={12} md={8}>
-                {children}
-              </Col>
-            </Row>
-          </div>
-        </div>
-      </div>
+    <Container>
+      <Row className="justify-content-md-center">
+        <Col xs={12} md={8}>
+          {children}
+        </Col>
+      </Row>
     </Container>
   );
 };
