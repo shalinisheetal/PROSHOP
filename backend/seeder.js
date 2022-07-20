@@ -1,3 +1,5 @@
+// separate script to import/export data
+
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import colors from "colors";
@@ -23,7 +25,7 @@ const importData = async () => {
 
     const adminUser = createdUsers[0]._id;
 
-    // make admin the user of all products
+    // make admin the owner of all products
     const sampleProducts = products.map((product) => {
       return { ...product, user: adminUser };
     });
